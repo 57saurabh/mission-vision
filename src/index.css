@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: gilroy,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.image{
+  position: relative;
+  height: 100vh;
+
+}
+.content{
+  display:flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  padding: 5% 10%;
+   font-family: '';
+
+}
+.content span.img-txt{
+background-color: rgba(0,0,0,0.7);   
+text-transform: uppercase;
+color: #fff;
+padding: 1rem;
+font-size: 2rem;
+letter-spacing: 10px;
+}
+.colomn{
+  background: #000000;
+  opacity: 0.7;
+   align-items: center;
+  justify-content: center;
+  display: flex;
+flex-direction: column;
+
+color: white;
+flex-basis: 49%;
+margin-bottom: 5%;
+border-radius: 10px;
+padding: 20px 10%;
+box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .image{
+    background: linear-gradient( rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./imgs/lesly-juarez-DFtjXYd5Pto-unsplash.jpg);;
+    height: 120vh;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    /* padding: 40px; */
+  }
+    .content{
+      flex-direction: column;
+    }
+  
+}
